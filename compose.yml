@@ -1,0 +1,10 @@
+version: "2"
+services:
+  webserver:
+    # apache com php e todas as estenções instaladas com sucesso
+    container_name: testssl
+    image: "moodlehq/moodle-php-apache:8.1"
+    ports:
+      - 8182:80
+    volumes:
+      - "./html/:/var/www/html"   
